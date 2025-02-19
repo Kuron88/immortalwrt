@@ -125,14 +125,7 @@
 		nand-bus-width = <8>;
 
 		partitions {
-			compatible = "fixed-partitions";
-			#address-cells = <1>;
-			#size-cells = <1>;
-
-			partition@0 {
-				label = "rootfs";
-				reg = <0x00 0x8000000>;
-			};
+			compatible = "qcom,smem-part";
 		};
 	};
 };
